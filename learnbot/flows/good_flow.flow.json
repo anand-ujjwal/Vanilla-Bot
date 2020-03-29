@@ -1,0 +1,70 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "8699281ef9",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-50fded"
+        }
+      ]
+    },
+    {
+      "id": "skill-50fded",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-50fded",
+      "flow": "skills/choice-50fded.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Placeme...]",
+          "condition": "temp['skill-choice-ret-qiuthy0kj9'] == \"Placement\"",
+          "node": "placements.flow.json"
+        },
+        {
+          "caption": "User picked [Hostel]",
+          "condition": "temp['skill-choice-ret-qiuthy0kj9'] == \"Hostel\"",
+          "node": "hostel_mess.flow.json"
+        },
+        {
+          "caption": "User picked [Locality]",
+          "condition": "temp['skill-choice-ret-qiuthy0kj9'] == \"Locality\"",
+          "node": "locality.flow.json"
+        },
+        {
+          "caption": "User picked [Campus]",
+          "condition": "temp['skill-choice-ret-qiuthy0kj9'] == \"Campus\"",
+          "node": "campus.flow.json"
+        },
+        {
+          "caption": "User picked [Admissi...]",
+          "condition": "temp['skill-choice-ret-qiuthy0kj9'] == \"Admission\"",
+          "node": "admission.flow.json"
+        },
+        {
+          "caption": "User picked [Faculty]",
+          "condition": "temp['skill-choice-ret-qiuthy0kj9'] == \"Faculty\"",
+          "node": "faculty.flow.json"
+        },
+        {
+          "caption": "User picked [Academi...]",
+          "condition": "temp['skill-choice-ret-qiuthy0kj9'] == \"Academics\"",
+          "node": "academics.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

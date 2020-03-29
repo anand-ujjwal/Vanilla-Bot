@@ -1,0 +1,433 @@
+[
+  {
+    "id": "builtin_text-jOFgqO",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hello",
+      "variations$en": [
+        "Hi",
+        "Hey"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-12T16:35:27.051Z",
+    "modifiedOn": "2020-03-12T16:35:27.051Z"
+  },
+  {
+    "id": "builtin_text-G944Q0",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "I am LearnBot :)",
+      "variations$en": [
+        "I am Vanilla :D"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-12T16:38:10.095Z",
+    "modifiedOn": "2020-03-16T16:15:10.010Z"
+  },
+  {
+    "id": "builtin_text-xzmMD2",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "What's your name?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-12T16:45:24.053Z",
+    "modifiedOn": "2020-03-12T16:52:05.106Z"
+  },
+  {
+    "id": "builtin_text-GXPxUt",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "It's nice to meet you {{user.nickname}} :)"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-12T16:54:18.836Z",
+    "modifiedOn": "2020-03-12T16:55:16.390Z"
+  },
+  {
+    "id": "builtin_text-TYIy8G",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Awesome..I am also good :)"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-12T17:37:53.226Z",
+    "modifiedOn": "2020-03-12T17:37:53.226Z"
+  },
+  {
+    "id": "builtin_text-P2SPX4",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Uh.. :("
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-12T17:38:22.157Z",
+    "modifiedOn": "2020-03-12T17:38:22.157Z"
+  },
+  {
+    "id": "builtin_text-OsKb12",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Many people are happy nowadays."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-12T17:47:11.307Z",
+    "modifiedOn": "2020-03-12T17:47:11.307Z"
+  },
+  {
+    "id": "builtin_text-m5xJp2",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Number of companies visited this year was 49",
+      "variations$en": [
+        "49 Companies visited this year"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T05:47:25.707Z",
+    "modifiedOn": "2020-03-13T05:47:25.707Z"
+  },
+  {
+    "id": "builtin_text-zzXtSu",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Highest package was of 14 lac CTC",
+      "variations$en": [
+        "Highest CTC was 14 lakhs"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T05:48:53.143Z",
+    "modifiedOn": "2020-03-13T05:48:53.143Z"
+  },
+  {
+    "id": "builtin_text-urpM01",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Total number of offers : 279",
+      "variations$en": [
+        "279 Students got placed in total"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T05:51:01.822Z",
+    "modifiedOn": "2020-03-13T05:51:01.822Z"
+  },
+  {
+    "id": "builtin_text-tfFWMm",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "For more information visit sdmcet.ac.in/placements1/",
+      "variations$en": [
+        "Visit sdmcet.ac.in/placements1/   for more information"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T05:54:26.391Z",
+    "modifiedOn": "2020-03-13T05:54:26.391Z"
+  },
+  {
+    "id": "builtin_text-wKOH69",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Number of companies visited this year was 50",
+      "variations$en": [
+        "50  Companies visited this year"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T07:56:46.686Z",
+    "modifiedOn": "2020-03-13T07:56:46.686Z"
+  },
+  {
+    "id": "builtin_text-YRxgym",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Highest packages was 10 lakh CTC",
+      "variations$en": [
+        "10 lakh CTC was the highest packeage offered"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T07:58:03.023Z",
+    "modifiedOn": "2020-03-13T08:08:31.766Z"
+  },
+  {
+    "id": "builtin_text-yoUsKm",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Total number of offers: 355",
+      "variations$en": [
+        "355 Students got placement offers from comapnies"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T07:59:45.564Z",
+    "modifiedOn": "2020-03-13T07:59:45.564Z"
+  },
+  {
+    "id": "builtin_text-3j8fg2",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Number of companies visited this year was 61",
+      "variations$en": [
+        "61 Companies visited this year"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T08:06:52.797Z",
+    "modifiedOn": "2020-03-13T08:06:52.797Z"
+  },
+  {
+    "id": "builtin_text-MrZR1f",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Highest package was 10.24 lakh CTC",
+      "variations$en": [
+        "10.24 lakh CTC was the highest package offered"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T08:10:02.041Z",
+    "modifiedOn": "2020-03-13T08:10:02.041Z"
+  },
+  {
+    "id": "builtin_text-uIZ_ek",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Total number of offers:405",
+      "variations$en": [
+        "405 Students got placement offers from the companies"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T08:11:28.223Z",
+    "modifiedOn": "2020-03-13T08:11:28.223Z"
+  },
+  {
+    "id": "builtin_text-3tuNYO",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Total number of companies visited this year till date is : 31",
+      "variations$en": [
+        "31 Companies visited the campus till date"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T08:14:08.468Z",
+    "modifiedOn": "2020-03-13T08:14:08.468Z"
+  },
+  {
+    "id": "builtin_text-ezKB_C",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Highest package offered till date is 11.44 lakh CTC.",
+      "variations$en": [
+        "11.44 lakh is the highest offered CTC till date."
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T08:15:10.446Z",
+    "modifiedOn": "2020-03-13T08:15:10.446Z"
+  },
+  {
+    "id": "builtin_text-WSpKp_",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hostel fee is around 30000 .Based upon the room types it varies.",
+      "variations$en": [
+        "Hostel fees is roughly around 30000.It may vary according to the room types."
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T08:59:42.640Z",
+    "modifiedOn": "2020-03-13T08:59:42.640Z"
+  },
+  {
+    "id": "builtin_text-iPAQ7t",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "There are 3 types of room available-\n1.Share\n2.Non shareable rooms with comman bathroom\n3.Non shareable room with attached bathroom.\n\nShareable rooms are avaliable with 2,3,4 peole sharing options."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T09:04:07.375Z",
+    "modifiedOn": "2020-03-13T09:04:07.375Z"
+  },
+  {
+    "id": "builtin_text-sDtIaA",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hostel is completely wifi enabled.\nAmenties like 24 hour medical facility, 24 hrs security , room cleaning ,  RO drinking water and hot water is provided."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T09:06:02.667Z",
+    "modifiedOn": "2020-03-13T09:06:02.667Z"
+  },
+  {
+    "id": "builtin_text-a1Nivb",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Mess fess is around 20000 per year."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T09:07:11.976Z",
+    "modifiedOn": "2020-03-13T09:07:11.976Z"
+  },
+  {
+    "id": "builtin_text-JPbHUu",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "The mess offers a wide variety of veg food.Both north indian and south indian cuisine are available."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T09:10:06.571Z",
+    "modifiedOn": "2020-03-13T09:10:06.571Z"
+  },
+  {
+    "id": "builtin_text-EnuK6F",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Here's the menu for current academic year."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T09:10:47.123Z",
+    "modifiedOn": "2020-03-13T09:10:47.123Z"
+  },
+  {
+    "id": "builtin_text-yIPB3O",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "What do you want to know about admissions??"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T09:22:16.578Z",
+    "modifiedOn": "2020-03-13T09:22:16.578Z"
+  },
+  {
+    "id": "builtin_text-aN46Rd",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "What do you want to know about ?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-15T15:13:25.781Z",
+    "modifiedOn": "2020-03-15T15:13:25.781Z"
+  },
+  {
+    "id": "builtin_text-J1GuBw",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "[Visir our website](https://botpress.io)"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-15T15:17:12.512Z",
+    "modifiedOn": "2020-03-15T15:17:12.512Z"
+  },
+  {
+    "id": "builtin_text-bCgX05",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "This is a test messgae "
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-15T15:21:54.171Z",
+    "modifiedOn": "2020-03-15T15:21:54.171Z"
+  },
+  {
+    "id": "builtin_text-CYon5r",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "[Click Here to visit placement section of the website](https://sdmcet.ac.in/placements1/)"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-15T15:29:29.621Z",
+    "modifiedOn": "2020-03-15T15:29:29.621Z"
+  },
+  {
+    "id": "builtin_text-NzmyGp",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "The word “Dharwad” means a place of rest in a long travel or a small habitation. "
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-16T16:17:59.966Z",
+    "modifiedOn": "2020-03-16T16:17:59.966Z"
+  },
+  {
+    "id": "builtin_text-5BceNw",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "For centuries, Dharwad acted as a gateway between the Malenadu (western mountains) and the Bayalu seeme (plains) and it became a resting place for travellers."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-16T16:19:01.566Z",
+    "modifiedOn": "2020-03-16T16:19:01.566Z"
+  },
+  {
+    "id": "builtin_text-Owgdj-",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "With Dharwad being located on a plateau, the weather is pleasant all throughout the year. It is also widely known as retires paradise because of the ease of life and almost zero pollution."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-16T16:20:17.953Z",
+    "modifiedOn": "2020-03-16T16:20:17.953Z"
+  },
+  {
+    "id": "builtin_text-VMHIBG",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "The climate is mildly hot during the summer (April–May), and pleasant during rest of the year, as it is at an altitude of about 750m, plus still has a lot of greenery round."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-16T16:26:46.948Z",
+    "modifiedOn": "2020-03-16T16:26:46.948Z"
+  },
+  {
+    "id": "builtin_text-dielst",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Dharwad is well known as a quiet and pleasant city and is an educational centre ."
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-16T16:27:11.049Z",
+    "modifiedOn": "2020-03-16T16:27:11.049Z"
+  }
+]

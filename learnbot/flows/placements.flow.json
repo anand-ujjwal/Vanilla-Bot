@@ -1,0 +1,173 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "aa68e129e3",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "placement_year_wise"
+        }
+      ]
+    },
+    {
+      "id": "skill-b1c0b1",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "placement_year_wise",
+      "flow": "skills/choice-b1c0b1.flow.json",
+      "next": [
+        {
+          "caption": "User picked [2016]",
+          "condition": "temp['skill-choice-ret-zysap4vey5'] == \"2016\"",
+          "node": "placement_2016"
+        },
+        {
+          "caption": "User picked [2017]",
+          "condition": "temp['skill-choice-ret-zysap4vey5'] == \"2017\"",
+          "node": "placement_2017"
+        },
+        {
+          "caption": "User picked [2018]",
+          "condition": "temp['skill-choice-ret-zysap4vey5'] == \"2018\"",
+          "node": "placement_2018"
+        },
+        {
+          "caption": "User picked [current]",
+          "condition": "temp['skill-choice-ret-zysap4vey5'] == \"current\"",
+          "node": "placcement_2019"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "Website_Link"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "161672ca89",
+      "name": "placement_2016",
+      "next": [
+        {
+          "condition": "true",
+          "node": "continue_move_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-m5xJp2",
+        "say #!builtin_text-zzXtSu",
+        "say #!builtin_text-urpM01"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "6a7bb0d60e",
+      "name": "placement_2017",
+      "next": [
+        {
+          "condition": "true",
+          "node": "continue_move_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-wKOH69",
+        "say #!builtin_text-YRxgym",
+        "say #!builtin_text-yoUsKm"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "6977f3774f",
+      "name": "placement_2018",
+      "next": [
+        {
+          "condition": "true",
+          "node": "continue_move_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-3j8fg2",
+        "say #!builtin_text-MrZR1f",
+        "say #!builtin_text-uIZ_ek"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f420602d64",
+      "name": "placcement_2019",
+      "next": [
+        {
+          "condition": "true",
+          "node": "continue_move_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-3tuNYO",
+        "say #!builtin_text-ezKB_C"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "029a265b75",
+      "name": "Website_Link",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-tfFWMm"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-534aa9",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "continue_move_choice",
+      "flow": "skills/choice-534aa9.flow.json",
+      "next": [
+        {
+          "caption": "User picked [another...]",
+          "condition": "temp['skill-choice-ret-l48450rm15'] == \"another_year_placement\"",
+          "node": "placement_year_wise"
+        },
+        {
+          "caption": "User picked [ask]",
+          "condition": "temp['skill-choice-ret-l48450rm15'] == \"ask\"",
+          "node": "placements_2.flow.json"
+        },
+        {
+          "caption": "User picked [palceme...]",
+          "condition": "temp['skill-choice-ret-l48450rm15'] == \"palcement_website\"",
+          "node": "visitwebsite"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "placements_2.flow.json"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "a77f15503e",
+      "name": "visitwebsite",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-CYon5r"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

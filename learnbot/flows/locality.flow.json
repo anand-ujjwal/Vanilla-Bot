@@ -1,0 +1,107 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "89dc27d8ea",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-0c906f"
+        }
+      ]
+    },
+    {
+      "id": "skill-0c906f",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-0c906f",
+      "flow": "skills/choice-0c906f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [LifeInD...]",
+          "condition": "temp['skill-choice-ret-3hh2zhd6g7'] == \"LifeInDharwad\"",
+          "node": "Life_in_dharwad"
+        },
+        {
+          "caption": "User picked [Tourist...]",
+          "condition": "temp['skill-choice-ret-3hh2zhd6g7'] == \"TouristPlaces\"",
+          "node": "Tourist_places"
+        },
+        {
+          "caption": "User picked [distance]",
+          "condition": "temp['skill-choice-ret-3hh2zhd6g7'] == \"distance\"",
+          "node": "Distance_from_station_airport"
+        },
+        {
+          "caption": "User picked [weather]",
+          "condition": "temp['skill-choice-ret-3hh2zhd6g7'] == \"weather\"",
+          "node": "Weather_climate"
+        },
+        {
+          "caption": "User picked [metropo...]",
+          "condition": "temp['skill-choice-ret-3hh2zhd6g7'] == \"metropolitan\"",
+          "node": "metropolitan_distance_time"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "45f5832a12",
+      "name": "Life_in_dharwad",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-NzmyGp",
+        "say #!builtin_text-5BceNw",
+        "say #!builtin_text-Owgdj-"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a35549b63b",
+      "name": "Tourist_places",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a3d35d0dfc",
+      "name": "Distance_from_station_airport",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8ae54cad2b",
+      "name": "Weather_climate",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-VMHIBG",
+        "say #!builtin_text-dielst"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4ca3cd7122",
+      "name": "metropolitan_distance_time",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry_academics",
+  "nodes": [
+    {
+      "id": "3f5dc3e629",
+      "name": "entry_academics",
+      "onEnter": [],
+      "onReceive": null,
+      "next": []
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "name"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-jOFgqO",
+        "say #!builtin_text-G944Q0"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "eee93b29af",
+      "name": "name",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-f60c80"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-xzmMD2"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"nickname\",\"value\":\"{{event.payload.text}}\"}",
+        "say #!builtin_text-GXPxUt"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-f60c80",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-f60c80",
+      "flow": "skills/choice-f60c80.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Fine]",
+          "condition": "temp['skill-choice-ret-4pm3349hf1'] == \"Fine\"",
+          "node": "good"
+        },
+        {
+          "caption": "User picked [Bad]",
+          "condition": "temp['skill-choice-ret-4pm3349hf1'] == \"Bad\"",
+          "node": "bad"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "retry"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "19091550bc",
+      "name": "retry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-f60c80"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "b3e0f9b981",
+      "name": "good",
+      "next": [
+        {
+          "condition": "true",
+          "node": "good_flow.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-TYIy8G"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "ae5569f262",
+      "name": "bad",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-P2SPX4"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

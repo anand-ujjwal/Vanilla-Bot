@@ -1,0 +1,104 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "qiuthy0kj9",
+    "contentId": "builtin_single-choice--piug8",
+    "invalidContentId": "",
+    "keywords": {
+      "Placement": [
+        "Placement"
+      ],
+      "Hostel": [
+        "Hostel",
+        "Hostel And Food"
+      ],
+      "Locality": [
+        "Locality"
+      ],
+      "Campus": [
+        "Campus",
+        "Campus Life"
+      ],
+      "Admission": [
+        "Admission",
+        "Admission Process and Fees"
+      ],
+      "Faculty": [
+        "Faculty",
+        "Faculty and Intake"
+      ],
+      "Academics": [
+        "Academics"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice--piug8 {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "016544"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"qiuthy0kj9\",\"contentId\":\"builtin_single-choice--piug8\",\"invalidContentId\":\"\",\"keywords\":{\"Placement\":[\"Placement\"],\"Hostel\":[\"Hostel\",\"Hostel And Food\"],\"Locality\":[\"Locality\"],\"Campus\":[\"Campus\",\"Campus Life\"],\"Admission\":[\"Admission\",\"Admission Process and Fees\"],\"Faculty\":[\"Faculty\",\"Faculty and Intake\"],\"Academics\":[\"Academics\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-qiuthy0kj9'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "711190"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"qiuthy0kj9\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-qiuthy0kj9']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "435987"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "542769"
+    }
+  ]
+}

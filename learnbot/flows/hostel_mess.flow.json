@@ -1,0 +1,158 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "start",
+  "nodes": [
+    {
+      "id": "7e14972936",
+      "name": "Hostel_fees",
+      "onEnter": [
+        "say #!builtin_text-WSpKp_"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice_different"
+        }
+      ]
+    },
+    {
+      "id": "skill-2663a0",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "hostel_choice",
+      "flow": "skills/choice-2663a0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [hostel_...]",
+          "condition": "temp['skill-choice-ret-i0ggzhwqy7'] == \"hostel_fees\"",
+          "node": "Hostel_fees"
+        },
+        {
+          "caption": "User picked [hostel_...]",
+          "condition": "temp['skill-choice-ret-i0ggzhwqy7'] == \"hostel_type\"",
+          "node": "hostel-types"
+        },
+        {
+          "caption": "User picked [hostel_...]",
+          "condition": "temp['skill-choice-ret-i0ggzhwqy7'] == \"hostel_facilities\"",
+          "node": "hostel_facilities"
+        },
+        {
+          "caption": "User picked [mess_fe...]",
+          "condition": "temp['skill-choice-ret-i0ggzhwqy7'] == \"mess_fees\"",
+          "node": "mess_fees"
+        },
+        {
+          "caption": "User picked [mess_me...]",
+          "condition": "temp['skill-choice-ret-i0ggzhwqy7'] == \"mess_menu\"",
+          "node": "mess_menu"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "feb7dbccaa",
+      "name": "hostel-types",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice_different"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-iPAQ7t"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "bf971b82f0",
+      "name": "hostel_facilities",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice_different"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-sDtIaA"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "bff3ce5673",
+      "name": "mess_fees",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice_different"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-a1Nivb"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e07e4328b2",
+      "name": "mess_menu",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-JPbHUu",
+        "say #!builtin_text-EnuK6F",
+        "say #!builtin_image-hH8oev"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "c2ea22c3b0",
+      "name": "start",
+      "next": [
+        {
+          "condition": "true",
+          "node": "hostel_choice"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-4c9af9",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice_different",
+      "flow": "skills/choice-4c9af9.flow.json",
+      "next": [
+        {
+          "caption": "User picked [choice]",
+          "condition": "temp['skill-choice-ret-gl2a4m4p3v'] == \"choice\"",
+          "node": "hostel_choice"
+        },
+        {
+          "caption": "User picked [differe...]",
+          "condition": "temp['skill-choice-ret-gl2a4m4p3v'] == \"different\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

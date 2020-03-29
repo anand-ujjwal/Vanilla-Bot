@@ -1,0 +1,99 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "3hh2zhd6g7",
+    "contentId": "builtin_single-choice-Q2ZICN",
+    "invalidContentId": "",
+    "keywords": {
+      "LifeInDharwad": [
+        "LifeInDharwad",
+        "Life In Dharwad"
+      ],
+      "TouristPlaces": [
+        "TouristPlaces",
+        "Nearby Tourist Places"
+      ],
+      "distance": [
+        "distance",
+        "Distance from Airport and Railway Station"
+      ],
+      "weather": [
+        "weather",
+        "Climate and Weather"
+      ],
+      "metropolitan": [
+        "metropolitan",
+        "Distance and time to nearby metropolitan cities"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-Q2ZICN {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "798357"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"3hh2zhd6g7\",\"contentId\":\"builtin_single-choice-Q2ZICN\",\"invalidContentId\":\"\",\"keywords\":{\"LifeInDharwad\":[\"LifeInDharwad\",\"Life In Dharwad\"],\"TouristPlaces\":[\"TouristPlaces\",\"Nearby Tourist Places\"],\"distance\":[\"distance\",\"Distance from Airport and Railway Station\"],\"weather\":[\"weather\",\"Climate and Weather\"],\"metropolitan\":[\"metropolitan\",\"Distance and time to nearby metropolitan cities\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-3hh2zhd6g7'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "326457"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"3hh2zhd6g7\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-3hh2zhd6g7']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "754885"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "974941"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+[
+  {
+    "id": "builtin_single-choice-0iKHYP",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Fine",
+          "value": "Fine"
+        },
+        {
+          "title": "Bad",
+          "value": "Bad"
+        }
+      ],
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "How are you?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-12T17:20:22.844Z",
+    "modifiedOn": "2020-03-12T17:20:22.844Z"
+  },
+  {
+    "id": "builtin_single-choice--piug8",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Placement",
+          "value": "Placement"
+        },
+        {
+          "title": "Hostel And Food",
+          "value": "Hostel"
+        },
+        {
+          "title": "Locality",
+          "value": "Locality"
+        },
+        {
+          "title": "Campus Life",
+          "value": "Campus"
+        },
+        {
+          "title": "Admission Process and Fees",
+          "value": "Admission"
+        },
+        {
+          "title": "Faculty and Intake",
+          "value": "Faculty"
+        },
+        {
+          "title": "Academics",
+          "value": "Academics"
+        }
+      ],
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "What do you want to know about??"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T05:31:07.311Z",
+    "modifiedOn": "2020-03-13T05:34:42.975Z"
+  },
+  {
+    "id": "builtin_single-choice-KosdV4",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "2016-17",
+          "value": "2016"
+        },
+        {
+          "title": "2017-18",
+          "value": "2017"
+        },
+        {
+          "title": "2018-19",
+          "value": "2018"
+        },
+        {
+          "title": "Current Year Ongoing Placements",
+          "value": "current"
+        }
+      ],
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Choose a year to get placement record"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T05:41:23.307Z",
+    "modifiedOn": "2020-03-13T05:42:40.577Z"
+  },
+  {
+    "id": "builtin_single-choice-nl_bgI",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Get  another year placement records",
+          "value": "another_year_placement"
+        },
+        {
+          "title": "Ask something else",
+          "value": "ask"
+        },
+        {
+          "title": "Visit website placement section",
+          "value": "palcement_website"
+        }
+      ],
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Please choose from following options"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T08:18:58.454Z",
+    "modifiedOn": "2020-03-15T15:28:02.408Z"
+  },
+  {
+    "id": "builtin_single-choice-2pItAj",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Hostel Fees",
+          "value": "hostel_fees"
+        },
+        {
+          "title": "Hostel Types",
+          "value": "hostel_type"
+        },
+        {
+          "title": "Hostel Facilities",
+          "value": "hostel_facilities"
+        },
+        {
+          "title": "Mess Fees",
+          "value": "mess_fees"
+        },
+        {
+          "title": "Mess Menu",
+          "value": "mess_menu"
+        }
+      ],
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Which information do you want about hostel and mess?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T08:47:08.590Z",
+    "modifiedOn": "2020-03-13T08:47:08.590Z"
+  },
+  {
+    "id": "builtin_single-choice-NsA4ZK",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Select a different option for hostel information",
+          "value": "choice"
+        },
+        {
+          "title": "Ask something else",
+          "value": "different"
+        },
+        {
+          "title": "Visit Website Section",
+          "value": "(https://sdmcet.ac.in/)"
+        }
+      ],
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "What you want to do?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-13T09:30:28.786Z",
+    "modifiedOn": "2020-03-15T15:25:24.005Z"
+  },
+  {
+    "id": "builtin_single-choice-Q2ZICN",
+    "formData": {
+      "choices$en": [
+        {
+          "title": "Life In Dharwad",
+          "value": "LifeInDharwad"
+        },
+        {
+          "title": "Nearby Tourist Places",
+          "value": "TouristPlaces"
+        },
+        {
+          "title": "Distance from Airport and Railway Station",
+          "value": "distance"
+        },
+        {
+          "title": "Climate and Weather",
+          "value": "weather"
+        },
+        {
+          "title": "Distance and time to nearby metropolitan cities",
+          "value": "metropolitan"
+        }
+      ],
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "What do you want to know about??"
+    },
+    "createdBy": "admin",
+    "createdOn": "2020-03-15T15:39:32.883Z",
+    "modifiedOn": "2020-03-15T15:39:32.883Z"
+  }
+]

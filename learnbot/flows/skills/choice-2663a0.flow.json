@@ -1,0 +1,99 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "i0ggzhwqy7",
+    "contentId": "builtin_single-choice-2pItAj",
+    "invalidContentId": "",
+    "keywords": {
+      "hostel_fees": [
+        "hostel_fees",
+        "Hostel Fees"
+      ],
+      "hostel_type": [
+        "hostel_type",
+        "Hostel Types"
+      ],
+      "hostel_facilities": [
+        "hostel_facilities",
+        "Hostel Facilities"
+      ],
+      "mess_fees": [
+        "mess_fees",
+        "Mess Fees"
+      ],
+      "mess_menu": [
+        "mess_menu",
+        "Mess Menu"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-2pItAj {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "105015"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"i0ggzhwqy7\",\"contentId\":\"builtin_single-choice-2pItAj\",\"invalidContentId\":\"\",\"keywords\":{\"hostel_fees\":[\"hostel_fees\",\"Hostel Fees\"],\"hostel_type\":[\"hostel_type\",\"Hostel Types\"],\"hostel_facilities\":[\"hostel_facilities\",\"Hostel Facilities\"],\"mess_fees\":[\"mess_fees\",\"Mess Fees\"],\"mess_menu\":[\"mess_menu\",\"Mess Menu\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-i0ggzhwqy7'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "201945"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"i0ggzhwqy7\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-i0ggzhwqy7']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "808952"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "097274"
+    }
+  ]
+}

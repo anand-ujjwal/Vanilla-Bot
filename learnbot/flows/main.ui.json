@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "id": "entry",
+      "position": {
+        "x": -1145,
+        "y": -650
+      }
+    },
+    {
+      "id": "eee93b29af",
+      "position": {
+        "x": -895,
+        "y": -555
+      }
+    },
+    {
+      "id": "skill-f60c80",
+      "position": {
+        "x": -930,
+        "y": -350
+      }
+    },
+    {
+      "id": "19091550bc",
+      "position": {
+        "x": -615,
+        "y": -360
+      }
+    },
+    {
+      "id": "b3e0f9b981",
+      "position": {
+        "x": -1045,
+        "y": -95
+      }
+    },
+    {
+      "id": "ae5569f262",
+      "position": {
+        "x": -495,
+        "y": 1
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "19091550bc",
+      "sourcePort": "out0",
+      "target": "skill-f60c80",
+      "points": [
+        {
+          "x": -409,
+          "y": -327
+        },
+        {
+          "x": -831,
+          "y": -357
+        }
+      ]
+    },
+    {
+      "source": "eee93b29af",
+      "sourcePort": "out0",
+      "target": "skill-f60c80",
+      "points": [
+        {
+          "x": -689,
+          "y": -411
+        },
+        {
+          "x": -831,
+          "y": -357
+        }
+      ]
+    },
+    {
+      "source": "entry",
+      "sourcePort": "out0",
+      "target": "eee93b29af",
+      "points": [
+        {
+          "x": -939,
+          "y": -567
+        },
+        {
+          "x": -796,
+          "y": -562
+        }
+      ]
+    },
+    {
+      "source": "skill-f60c80",
+      "sourcePort": "out2",
+      "target": "19091550bc",
+      "points": [
+        {
+          "x": -724,
+          "y": -250
+        },
+        {
+          "x": -515,
+          "y": -367
+        }
+      ]
+    },
+    {
+      "source": "skill-f60c80",
+      "sourcePort": "out1",
+      "target": "ae5569f262",
+      "points": [
+        {
+          "x": -724,
+          "y": -276
+        },
+        {
+          "x": -396,
+          "y": -6
+        }
+      ]
+    },
+    {
+      "source": "skill-f60c80",
+      "sourcePort": "out0",
+      "target": "b3e0f9b981",
+      "points": [
+        {
+          "x": -724,
+          "y": -301
+        },
+        {
+          "x": -946,
+          "y": -102
+        }
+      ]
+    }
+  ]
+}
